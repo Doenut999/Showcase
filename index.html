@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" async></script>
+    <script src="anime-master/lib/anime.min.js"></script>
+    <script src="animations.js"></script>
 </head>
 <body>
                     <!--    Sidebar -->
@@ -27,7 +30,7 @@
 
     <main>
         <header id="header">
-            <nav id="main-nav">
+            <nav class="main-nav">
                 <div class="links">
                     <ul id="nav-links">
                     <li><a href="#">HOME</a></li>
@@ -39,7 +42,23 @@
                 </div>
             </nav>
         </header>
+        <div class="burger">
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+
+        </div>
     </main>
+
+
 
 
 
